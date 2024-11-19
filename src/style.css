@@ -59,7 +59,7 @@
 
 .landing-page .text-wrapper {
   position: relative;
-  width: fit-content;
+  width: auto;
   font-family: var(--h3-font-family);
   font-weight: var(--h3-font-weight);
   color: #ffffff;
@@ -399,8 +399,9 @@
   height: 64px;
   top: -16px;
   left: 24px;
-  background-color: var(--variable-collection-gray-knex);
+  background-color: gray;
   border-radius: 32px;
+  z-index: 10;
 }
 
 .landing-page .icon-2 {
@@ -409,8 +410,9 @@
   height: 64px;
   top: -16px;
   left: 24px;
-  background-color: var(--variable-collection-purple-dark-knex);
+  background-color: purple;
   border-radius: 32px;
+  z-index: 10;
 }
 
 .landing-page .icon-3 {
@@ -419,7 +421,7 @@
   height: 64px;
   top: -16px;
   left: 24px;
-  background-color: var(--variable-collection-dark-green-knex);
+  background-color: darkgreen;
   border-radius: 32px;
 }
 
@@ -429,7 +431,7 @@
   height: 64px;
   top: -16px;
   left: 24px;
-  background-color: var(--variable-collection-yellow-knex);
+  background-color: yellow;
   border-radius: 32px;
 }
 
@@ -751,6 +753,7 @@
   position: relative;
   flex: 0 0 auto;
   background-color: #f7f7f7;
+  border-radius: 16px;
 }
 
 .landing-page .frame-12 {
@@ -759,6 +762,7 @@
   flex-grow: 1;
   height: 200px;
   background-color: #33ff5c;
+  border-radius: 16px;
 }
 
 .landing-page .frame-13 {

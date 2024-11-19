@@ -4,7 +4,6 @@ import './styleguide.css'
 function App() {
 
   return (
-        <>
       <div className="landing-page">
         <div className="div">
           <div className="heading">
@@ -94,20 +93,20 @@ function App() {
                 </div>
                 <div className="frame-3">
                   <div className="frame-4">
-                    <img className="icon-check-circle" src="img/icon-check-circle.svg" />
-                    <div className="text-wrapper-10">Example</div>
+                    <img className="icon-check-circle" src="../accept.png" />
+                    <div className="text-wrapper-10">Simple and secure.</div>
                   </div>
                   <div className="frame-5">
-                    <img className="icon-check-circle" src="img/icon-check-circle.svg" />
-                    <div className="text-wrapper-10">Example</div>
+                    <img className="icon-check-circle" src="../accept.png" />
+                    <div className="text-wrapper-10">Supports cash, cards, or online options.</div>
                   </div>
                   <div className="frame-5">
-                    <img className="icon-check-circle" src="img/icon-check-circle.svg" />
-                    <div className="text-wrapper-10">Example</div>
+                    <img className="icon-check-circle" src="../accept.png" />
+                    <div className="text-wrapper-10">Enables fast transactions.</div>
                   </div>
                   <div className="frame-6">
-                    <img className="icon-check-circle" src="img/icon-check-circle.svg" />
-                    <div className="text-wrapper-10">Example</div>
+                    <img className="icon-check-circle" src="../accept.png" />
+                    <div className="text-wrapper-10"> Enhances user convenience.</div>
                   </div>
                 </div>
               </div>
@@ -121,9 +120,6 @@ function App() {
               </div>
               <div className="frame-8">
                 <div className="frame-9">
-                  <div className="text-wrapper-11">Main Technologies</div>
-                  <p className="text-wrapper-9">Ask us for other technologies</p>
-                </div>
                 <div className="frame-10">
                   <div className="frame-11">
                     <div className="icon-5"></div>
@@ -217,7 +213,7 @@ function App() {
           </div>
         </div>
       </div>
-    </>
+      </div>
 )
 }
 
