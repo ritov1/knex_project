@@ -1,3 +1,8 @@
+.container {
+  display: flex;
+  gap: 0;
+}
+
 .landing-page {
   background-color: #dee2e6;
   display: flex;
@@ -9,8 +14,10 @@
 .landing-page .div {
   background-color: #dee2e6;
   overflow-x: hidden;
-  width: 1440px;
-  height: 4040px;
+  width: 90%;
+  padding: 1em;
+  max-width: 1440px;
+  height: auto;
   position: relative;
 }
 
@@ -59,7 +66,7 @@
 
 .landing-page .text-wrapper {
   position: relative;
-  width: auto;
+  width: fit-content;
   font-family: var(--h3-font-family);
   font-weight: var(--h3-font-weight);
   color: #ffffff;
@@ -123,7 +130,7 @@
 .landing-page .text-wrapper-2 {
   position: relative;
   align-self: stretch;
-  margin-top: -1.00px;
+  margin-top: -1px;
   font-family: "Poppins-Regular", Helvetica;
   font-weight: 400;
   color: var(--variable-collection-light-purple-knex);
@@ -159,13 +166,12 @@
 .landing-page .heading {
   display: flex;
   flex-direction: column;
-  width: 1440px;
-  height: 526px;
+  width: 1460px;
+  height: 672px;
   align-items: center;
   justify-content: center;
-  padding: 96px 0px;
+  padding: 0px;
   position: absolute;
-  top: 82px;
   left: 0;
   background-color: var(--variable-collection-black-knex);
 }
@@ -208,7 +214,7 @@
 .landing-page .text-wrapper-4 {
   position: relative;
   align-self: stretch;
-  margin-top: -1.50px;
+  margin-top: -1.5px;
   font-family: var(--h1-font-family);
   font-weight: var(--h1-font-weight);
   color: #ffffff;
@@ -261,7 +267,7 @@
   box-sizing: border-box;
   position: relative;
   width: fit-content;
-  margin-top: -1.00px;
+  margin-top: -1px;
   font-family: "Poppins-SemiBold", Helvetica;
   font-weight: 600;
   color: #ffffff;
@@ -289,16 +295,15 @@
 .landing-page .features-section {
   flex-direction: column;
   align-items: center;
-  gap: 80px;
-  flex: 1;
-  flex-grow: 1;
+  gap: 32px;
+  flex: 0.5;
   display: flex;
   width: 1152px;
   position: relative;
 }
 
 .landing-page .text-wrapper-5 {
-  margin-top: -1.00px;
+  margin-top: -1px;
   color: #ffffff;
   position: relative;
   width: fit-content;
@@ -334,7 +339,7 @@
   height: 276px;
   align-items: flex-start;
   gap: 16px;
-  padding: 64px 24px 24px;
+  padding: 64px 24px 0px;
   position: relative;
   background-color: #f7f7f7;
   border-radius: 16px;
@@ -343,7 +348,7 @@
 .landing-page .text-wrapper-6 {
   position: relative;
   align-self: stretch;
-  margin-top: -1.00px;
+  margin-top: -1px;
   font-family: var(--h3-font-family);
   font-weight: var(--h3-font-weight);
   color: #000000b2;
@@ -382,14 +387,14 @@
   box-sizing: border-box;
   position: relative;
   width: fit-content;
-  margin-top: -1.00px;
+  margin-top: -1px;
   font-family: "Poppins-SemiBold", Helvetica;
   font-weight: 600;
   color: #000000;
   font-size: 16px;
   text-align: center;
+  margin: 0;
   letter-spacing: 0;
-  line-height: normal;
   text-decoration: underline;
 }
 
@@ -450,28 +455,16 @@
   overflow: hidden;
 }
 
-.landing-page .button-text-3 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1.00px;
-  font-family: "Poppins-SemiBold", Helvetica;
-  font-weight: 600;
-  color: #ffffff;
-  font-size: 16px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
 .landing-page .price {
   display: flex;
   flex-direction: column;
-  width: 1440px;
+  width: 1460px;
+  height: auto;
   align-items: center;
   justify-content: center;
   padding: 96px 0px;
   position: absolute;
-  top: 1490px;
+  top: 1280px;
   left: 0;
   background-color: var(--variable-collection-black-knex);
 }
@@ -557,7 +550,7 @@
 .landing-page .frame-3 {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   gap: 3px;
   position: relative;
@@ -569,12 +562,12 @@
 
 .landing-page .frame-4 {
   display: flex;
-  width: 122px;
   align-items: center;
+  align-content: flex-start;
   gap: 14px;
   position: relative;
   flex: 0 0 auto;
-  margin-top: -3.00px;
+  margin-top: -3px;
 }
 
 .landing-page .icon-check-circle {
@@ -586,6 +579,7 @@
 .landing-page .text-wrapper-10 {
   position: relative;
   width: fit-content;
+  text-align: justify;
   font-family: "Poppins-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
@@ -596,7 +590,6 @@
 
 .landing-page .frame-5 {
   display: flex;
-  width: 122px;
   align-items: center;
   gap: 14px;
   position: relative;
@@ -605,12 +598,11 @@
 
 .landing-page .frame-6 {
   display: flex;
-  width: 122px;
   align-items: center;
   gap: 14px;
   position: relative;
   flex: 0 0 auto;
-  margin-bottom: -3.00px;
+  margin-bottom: -3px;
 }
 
 .landing-page .rectangle {
@@ -619,21 +611,6 @@
   align-self: stretch;
   flex-grow: 1;
   object-fit: cover;
-}
-
-.landing-page .tecnologies {
-  display: flex;
-  flex-direction: column;
-  width: 1440px;
-  height: 306px;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px;
-  position: absolute;
-  top: 1184px;
-  left: 0;
-  background-color: var(--variable-collection-black-knex);
 }
 
 .landing-page .frame-7 {
@@ -736,9 +713,9 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
-  padding: 100px 10px 10px;
+  padding: 50px 10px 10px;
   position: absolute;
-  top: 2008px;
+  top: 1790px;
   left: 0;
   background-color: var(--variable-collection-black-knex);
 }
@@ -792,7 +769,7 @@
 .landing-page .text-wrapper-12 {
   position: relative;
   width: 220px;
-  margin-top: -1.50px;
+  margin-top: -1.5px;
   font-family: "Poppins-SemiBold", Helvetica;
   font-weight: 600;
   color: #000000b2;
@@ -819,8 +796,8 @@
 .landing-page .we-need-a-thorough {
   position: relative;
   width: 220px;
-  margin-top: -1.00px;
-  margin-bottom: -10.00px;
+  margin-top: -1px;
+  margin-bottom: -10px;
   font-family: "Poppins-Regular", Helvetica;
   font-weight: 400;
   color: #000000b2;
@@ -876,15 +853,6 @@
   flex: 0 0 auto;
 }
 
-.landing-page .logomaior-2 {
-  position: relative;
-  width: 160px;
-  height: 62px;
-  background-image: url(./img/logomaior-1.png);
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
 .landing-page .menu-items {
   align-items: flex-start;
   gap: 18px;
@@ -906,7 +874,7 @@
 .landing-page .menu-item-2 {
   position: relative;
   width: fit-content;
-  margin-top: -1.00px;
+  margin-top: -1px;
   font-family: "Poppins-Medium", Helvetica;
   font-weight: 500;
   color: #00000080;
@@ -931,7 +899,7 @@
 .landing-page .menu-item-3 {
   position: relative;
   width: fit-content;
-  margin-top: -1.00px;
+  margin-top: -1px;
   font-family: "Poppins-Medium", Helvetica;
   font-weight: 500;
   color: #ffffff;
