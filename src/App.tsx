@@ -1,7 +1,18 @@
 import "./style.css";
 import "./styleguide.css";
+import AIChat from "./AIChat.tsx"; 
+import { useState } from "react";
 
 function App() {
+   const [showAIChat, setShowAIChat] = useState(false);
+
+   const openAIChat = () => {
+     setShowAIChat(true);
+   };
+
+   const closeAIChat = () => {
+     setShowAIChat(false);
+   };
   return (
     <div className="conteiner">
       <div className="landing-page">
@@ -16,9 +27,20 @@ function App() {
                 </p>
               </div>
               <button className="button-wrapper">
-                <button className="button">
-                  <button className="button-text">Learn more</button>
-                </button>
+                 <div>
+      {!showAIChat ? (
+        <button className="button" onClick={openAIChat}>
+          <span className="button-text">Learn more</span>
+        </button>
+      ) : (
+        <AIChat />
+      )}
+      {showAIChat && (
+        <button onClick={closeAIChat} style={{ marginTop: "20px" }}>
+          Close AI Chat
+        </button>
+      )}
+    </div>
               </button>
             </div>
           </div>
